@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container-page">
+        <div class="container-flex">
+            <p>+1 541-816-4500</p>
+            <p>550 Industrial Circle, White City, OR, United States, Oregon</p>
+            <div class="hourLink-button"><a href="#hour-flex_id" title="Shop Hours">  
+                
+                <div id="shop_hour"></div>
+            </a></div>
+        </div>
+        <header class="header-flex">
+            <div class="logo">
+                <h1>Real Performance Automotive</h1>
+            </div>
+            <nav>
+                <div class="navLink-container">
+                    <div class="navLink-button"><a href="Index.html" title="Home">Home</a></div>
+                </div>
+                <div class="navLink-container">
+                    <div class="navLink-button"><a href="service.html" title="Service">Service</a></div>
+                </div>
+                <div class="navLink-container">
+                    <div class="navLink-button"><a href="Store.html" title="Store">Store</a></div>
+                </div>
+                <div class="navLink-container">
+                    <div class="navLink-button">Contact</div>
+                </div>
+
+            </nav>
+        </header>
+        <img src="img/Shop_image_2.jpg" width="100%" alt="Image of an engine">
+        <main class="contact-page-main">
+            <h2>Contact</h2>
+            <div class="form-container">
+                <form id="contact-form">
+                    <h3>Get in touch</h3>
+                    <p id="error-message"></p>
+
+                    <label>Personal Information</label>
+                    <input id="name" type="text" placeholder="Full Name"><br>
+                    <input id="email" type="email" placeholder="Email * Required"><br>
+                    <input id="phone-number" type="text" placeholder="Phone Number"><br>
+
+
+                    <label>Vehicle Information</label>
+                    <input id="year" type="text" placeholder="Vehicle Year"><br>
+                    <input id="make" type="text" placeholder="Vehicle Make"><br>
+                    <input id="model" type="text" placeholder="Vehicle Model"><br>
+
+                    <label>Reason for scheduling/contacting</label>
+                    <br>
+                    <textarea id="reason" placeholder="Message" cols="30" rows="10"></textarea>
+
+                    <br>
+                    <button type="submit" class="submit_button" id="submit">Submit</button>
+
+                    <!-- <input type="submit"  id="submit" value="Submit" onclick="SendMail()"> -->
+                </form>
+
+            </div>
+
+            <br><br>
+            
+    
+            <section id="hour-flex_id" class="hour-flex">
+                <h3>Hours
+                </h3>
+                <ul>
+                    <li>Monday 8:00 AM - 6:00 PM </li>
+                    <li>Tuesday 8:00 AM - 6:00 PM </li>
+                    <li>Wednesday 8:00 AM - 6:00 PM </li>
+                    <li>Thursday 8:00 AM - 6:00 PM </li>
+                    <li>Friday 8:00 AM - 6:00 PM </li>
+                    <li>Saturday CLOSED </li>
+                    <li>Sunday CLOSED </li>
+                </ul>
+            </section>
+
+
+        </main>
+        <footer>
+            <h3 class="h3-footer">550 Industrial Circle, White City, OR, United States, Oregon</h3>
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe id="gmap_canvas_iframe"
+                        src="https://maps.google.com/maps?q=550%20Industrial%20Circle,%20White%20City,%20OR,%20United%20States,%20Oregon&t=&z=15&ie=UTF8&iwloc=&output=embed">
+                    </iframe>
+                    <a href="https://www.whatismyip-address.com"></a><br>
+                </div>
+            </div>
+            <div class="footer-flex-div">
+                <div class="footer-flex">
+                    <p>+1 541-816-4500</p>
+                    <div class="facebook-logo">
+                        <a href="https://www.facebook.com/RealPerformanceAuto"> <img src="img/logo-facebookpng-32260.png"
+                                class="facebook-logo-image" alt="Facebook logo"></a>
+                    </div>
+                    <p>realperformance@charter.net</p>
+                </div>
+                <p class="copyright">Copyright © 2022 Real Performance Automotive</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/contact.js" defer></script>
+    <script src="js/index.js" ></script>
+</body>
+
+
+</html>
