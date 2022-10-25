@@ -1,29 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Gallery Page</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
     <div class="container-page">
         <div class="container-flex">
             <p>+1 541-816-4500</p>
             <p>550 Industrial Circle, White City, OR, United States, Oregon</p>
-            <div class="hourLink-button"><a href="#hour-flex_id" title="Shop Hours">  
-                
+            <div class="hourLink-button"><a href="Contact.html#hour-flex_id" title="Shop Hours">  <div class="time">
                 <div id="shop_hour"></div>
-            </a></div>
+            </div></a></div>
         </div>
         <header class="header-flex">
-            <div class="logo">
-                <h1>Real Performance Automotive</h1>
-            </div>
+            
+            <div class="logo"><h1>Real Performance Automotive</h1></div>
             <nav>
                 <div class="navLink-container">
                     <div class="navLink-button"><a href="Index.html" title="Home">Home</a></div>
@@ -35,61 +31,35 @@
                     <div class="navLink-button"><a href="Blog.html" title="Blog">Blog</a></div>
                 </div>
                 <div class="navLink-container">
-                    <div class="navLink-button"><a href="Gallery.html" title="Store">Gallery</a></div>
+                    <div class="navLink-button">Gallery</div>
                 </div>
                 <div class="navLink-container">
-                    <div class="navLink-button">Contact</div>
+                    <div class="navLink-button"><a href="Contact.html" title="Contact">Contact</a></div>
                 </div>
 
             </nav>
         </header>
-        <img src="img/Shop_image_2.jpg" width="100%" alt="Image of an engine">
-        <main class="contact-page-main">
-            <h2>Contact</h2>
-            <div class="form-container">
-                <form id="contact-form">
-                    <h3>Get in touch</h3>
-                    <h3 id="error-message"></h3>
+        <main>
+            <h2>Gallery</h2>
+            <aside class="gridbox-gallery">
+                <img src="img/gallery-image1.jpg" alt="Image of a car">
+                <img src="img/gallery-image2.jpg" alt="Image of a car">
+                <img src="img/gallery-image3.jpg" alt="Image of a car">
+                <img src="img/gallery-image4.jpg" alt="Image of a car">
+                <img src="img/gallery-image5.jpg" alt="Image of a car">
+                <img src="img/gallery-image6.jpg" alt="Image of a car">
+                <img src="img/gallery-image7.jpg" alt="Image of a car">
+                <img src="img/gallery-image8.jpg" alt="Image of a car">
+                <img src="img/gallery-image9.jpg" alt="Image of a car">
+                <img src="img/gallery-image10.jpg" alt="Image of a car">
+                <img src="img/gallery-image11.jpg" alt="Image of a car">
+                <img src="img/gallery-image12.jpg" alt="Image of a car">
+                <img src="img/gallery-image13.jpg" alt="Image of a car">
+                <img src="img/gallery-image14.jpg" alt="Image of a car">
+                <img src="img/gallery-image15.jpg" alt="Image of a car">
+                <img src="img/gallery-image16.jpg" alt="Image of a car">
 
-                    <label>Personal Information</label>
-                    <input id="name" type="text" placeholder="Full Name" required><br>
-                    <input id="phone-number" type="text" placeholder="Phone Number"><br>
-
-
-                    <label>Vehicle Information</label>
-                    <input id="year" type="text" placeholder="Vehicle Year"><br>
-                    <input id="make" type="text" placeholder="Vehicle Make"><br>
-                    <input id="model" type="text" placeholder="Vehicle Model"><br>
-
-                    <label>Reason for scheduling/contacting</label>
-                    
-                    <textarea id="reason" placeholder="Message" cols="30" rows="10"></textarea>
-
-                    <br>
-                    <button type="submit" class="submit_button" id="submit">Submit</button>
-
-                    <!-- <input type="submit"  id="submit" value="Submit" onclick="SendMail()"> -->
-                </form>
-
-            </div>
-
-            <br><br>
-            
-    
-            <section id="hour-flex_id" class="hour-flex">
-                <h3>Hours
-                </h3>
-                <ul>
-                    <li>Monday 8:00 AM - 6:00 PM </li>
-                    <li>Tuesday 8:00 AM - 6:00 PM </li>
-                    <li>Wednesday 8:00 AM - 6:00 PM </li>
-                    <li>Thursday 8:00 AM - 6:00 PM </li>
-                    <li>Friday 8:00 AM - 6:00 PM </li>
-                    <li>Saturday CLOSED </li>
-                    <li>Sunday CLOSED </li>
-                </ul>
-            </section>
-
+            </aside>
 
         </main>
         <footer>
@@ -114,11 +84,8 @@
                 <p class="copyright">Copyright © 2022 Real Performance Automotive</p>
             </div>
         </footer>
+
     </div>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="js/contact.js" defer></script>
-    <script src="js/index.js" ></script>
+    <script src="js/index.js" defer></script>
 </body>
-
-
 </html>

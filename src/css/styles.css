@@ -4,6 +4,10 @@
   background-attachment: fixed;
 
 }
+html, body {
+  min-height: 100vh; 
+  height: 100%;
+}
 
 .form-container {
   border-radius: 20px;
@@ -85,6 +89,7 @@ main.contact-page-main {
   align-items: center;
   margin-top: 13px;
   justify-content: space-evenly;
+  margin-left: 59px;
 }
 .footer-flex-div{
   background-color: rgb(221, 218, 218);
@@ -103,20 +108,19 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
- 
-
-
 }
 .facebook-logo-image{
   width: 45px;
   height: 45px;
+}
+.facebook-logo-image:hover {
+  transform: scale(1.1);
 }
 footer p{
   font-weight: 800;
 }
 p.copyright {
   font-size: 11px;
-  margin-right: 90px;
   text-align: center;
 }
 
@@ -143,6 +147,7 @@ p.copyright {
   align-items: center;
   color: rgb(94, 129, 175);
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 20%);
+  transform: scale(1.1);
 }
 
 #shop_hour p {
@@ -209,6 +214,9 @@ h1 {
   font-weight: 900;
   color: rgb(0, 0, 0);
 }
+h3#error-message {
+  color: red;
+}
 
 
 a {                                    /*(C)*/ 
@@ -238,8 +246,8 @@ a {                                    /*(C)*/
 }
 
 .navLink-button {
-
-  color: rgb(108, 124, 179);
+ 
+  color: rgb(189, 189, 189);
   padding: 5px 10px 5px 10px;
   border-radius: 10%;
   font-size: 20px;
@@ -249,11 +257,15 @@ a {                                    /*(C)*/
 a:visited {
   color: rgb(0, 0, 0);
 }
-
-.navLink-button>a:hover {
-  color: rgb(153, 153, 153);
+a:link {
+  color: rgb(0, 0, 0);
 }
 
+
+.navLink-button>a:hover {
+  color: rgb(108, 124, 179);
+  transform: scale(1.1);
+}
 
 
 .mapouter {
@@ -308,7 +320,13 @@ textarea {
   box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 5%);
 }
 .submit_button {
-  background-color: rgb(221, 218, 218);
+  padding: 0 5px 0 5px;
+  background-color: #d7d7d7;
+  min-width: 115px;
+  border-radius: 10%;
+  text-align: center;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 10%);
+
   border: none;
   border-radius: 10px;
   padding: 8px 32px;
@@ -316,10 +334,60 @@ textarea {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  font-weight: 600;
   margin-top: 25px;
 }
 .submit_button:hover {
-  background-color: rgb(158, 158, 158);
-  color: white;
+  color: rgb(108, 124, 179);
   cursor: pointer;
+  transform: scale(1.1);
+}
+
+.gridbox-gallery {                           /*(Grid:)*/
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 530px);
+  grid-template-rows: repeat(3, 320px);
+  column-gap: 32px;
+  row-gap: 37px;
+
+}
+.gridbox-gallery > img {
+  object-fit: cover;
+  width: 530px;
+  height: 320px;
+  border-radius: 3%;
+}
+.blog_article {
+  display: flex;
+  width: 90%;
+  text-align: center;
+  margin-bottom: 50px;
+  flex-direction: column;
+  align-items: center;
+}
+.service-div {
+  background-color: rgb(201, 201, 201);
+  padding: 5px 10px 5px 10px;
+  min-width: 115px;
+  border-radius: 10%;
+  text-align: center;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 10%);
+  margin-top: 20px;
+}
+.blog_article p {
+  width: 700px;
+  padding-bottom: 10px;
+}
+
+.blog_article h3 {
+font-size: 22px;
+}
+.main_blog h2 {
+margin-bottom: 100px;
+}
+.main_blog img {
+  border-radius: 30px;
+  padding-bottom: 10px;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 10%);
 }
