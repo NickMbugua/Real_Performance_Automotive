@@ -260,13 +260,26 @@ a {                                    /*(C)*/
   font-weight: 900;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 .droplist-content {
   display: none;
   position: absolute;
   background-color: #ececec;
   min-width: 115px;
   border-radius: 10%;
-  margin-left: -5;
+
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 } 
 .droplist-content a {
@@ -280,12 +293,53 @@ a {                                    /*(C)*/
 .droplist-content a:hover {
   background-color: #dddddd;
   border-radius: 10%;
+  color: rgb(98, 117, 180);
+
   
+}
+.blog-navLink-button{
+  background-color:rgb(217 217 217);
+  color: rgb(0, 0, 0);
+  padding: 5px 10px 5px 10px;
+  border-radius: 10%;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: 900;
+}
+.blog-navLink-button:hover{
+  color: rgb(98, 117, 180);
+  transform: scale(1.05);
+}
+
+
+.blog-navLink-container:hover{
+  background-color: #dddddd;
   color: rgb(98, 117, 180);
 }
-.navLink-container:hover .droplist-content {
+.blog-navLink-container{
+  background-color: #f0f0f0;
+  min-width: 115px;
+  border-radius: 10%;
+  text-align: center;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 10%);
+}
+
+.blog-navLink-container:hover .droplist-content {
   display: block;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 a:visited {
@@ -353,7 +407,7 @@ textarea {
   padding: 10px;
   box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 5%);
 }
-.submit_button {
+.submit_button, .blog-link {
   padding: 0 5px 0 5px;
   background-color: #d7d7d7;
   min-width: 115px;
@@ -371,11 +425,22 @@ textarea {
   font-weight: 600;
   margin-top: 25px;
 }
+.blog-link{
+  background-color: #d6d6d6;
+}
 .submit_button:hover {
   color: rgb(108, 124, 179);
   cursor: pointer;
   transform: scale(1.1);
 }
+.blog-link:hover {
+  color: rgb(108, 124, 179);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+
+
 
 .gridbox-gallery {                           /*(Grid:)*/
   display: grid;
@@ -442,7 +507,7 @@ textarea {
 .blog_article h3 {
 font-size: 22px;
 }
-.main_blog h2 {
+.main_blog .blog-navLink-container {
 margin-bottom: 100px;
 }
 .main_blog img {
