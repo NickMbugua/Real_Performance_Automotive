@@ -24,6 +24,10 @@ contactForm.addEventListener("submit", (e) => {
         console.log("Error");
         message.push("Please add your full name!");
     }
+    if (phoneNumber.value == "" ) {
+        console.log("Error");
+        message.push("Please add your phone number!");
+    }
     if (!userName.value.match(regEx))
     {
         message.push("Please entry an valid name!");

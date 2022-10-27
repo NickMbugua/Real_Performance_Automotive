@@ -16,6 +16,7 @@ html, body {
   text-align: center;
   background-color: whitesmoke;
   padding: 29px 25px 25px 25px;
+  margin-top: 40px;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 
@@ -31,8 +32,8 @@ section.hour-flex {
 .container-flex {
   display: flex;
   justify-content: space-between;
-  padding-left: 149px;
-  padding-right: 90px;
+  padding-left: 164px;
+  padding-right: 86px;
   height: 115px;
   align-items: center;
   font-weight: 700;
@@ -74,22 +75,27 @@ main {
   align-items: center;
 }
 main.contact-page-main {
-  padding-top: 100px;
+  padding-top: 50px;
 }
+
 .main-flex {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
+.main_blog{
+  margin-top: 50px;
+}
 
 .footer-flex {
   background-color: rgb(221, 218, 218);
   display: flex;
-  width: 100%;
+  width: 60%;
   align-items: center;
   margin-top: 13px;
-  justify-content: space-evenly;
-  margin-left: 59px;
+  justify-content: space-between;
+  margin-left: 23.5%;
+
 }
 .footer-flex-div{
   background-color: rgb(221, 218, 218);
@@ -104,7 +110,6 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -131,7 +136,7 @@ p.copyright {
   align-items: center;
 }
 #shop_hour {
-  background-color: whitesmoke;
+  background-color: rgb(230, 230, 230);
   display: flex;
   padding: 14px;
   height: 37px;
@@ -254,6 +259,35 @@ a {                                    /*(C)*/
   border: none;
   font-weight: 900;
 }
+
+.droplist-content {
+  display: none;
+  position: absolute;
+  background-color: #ececec;
+  min-width: 115px;
+  border-radius: 10%;
+  margin-left: -5;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+} 
+.droplist-content a {
+  color: black;
+  padding: 12px 16px;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+}
+.droplist-content a:hover {
+  background-color: #dddddd;
+  border-radius: 10%;
+  
+  color: rgb(98, 117, 180);
+}
+.navLink-container:hover .droplist-content {
+  display: block;
+}
+
+
 a:visited {
   color: rgb(0, 0, 0);
 }
@@ -350,6 +384,7 @@ textarea {
   grid-template-rows: repeat(3, 320px);
   column-gap: 32px;
   row-gap: 37px;
+  margin-top: 40px;
 
 }
 .gridbox-gallery > img {
@@ -357,6 +392,11 @@ textarea {
   width: 530px;
   height: 320px;
   border-radius: 3%;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+}
+.gallery-main {
+  margin-top: 50px;
+
 }
 .blog_article {
   display: flex;
@@ -366,15 +406,34 @@ textarea {
   flex-direction: column;
   align-items: center;
 }
-.service-div {
-  background-color: rgb(201, 201, 201);
-  padding: 5px 10px 5px 10px;
+
+.service-div-button{
+  padding: 0 5px 0 5px;
+  background-color: #d7d7d7;
   min-width: 115px;
   border-radius: 10%;
   text-align: center;
   box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 10%);
-  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 25px;
 }
+
+.service-div-button:hover {
+  transform: scale(1.1);
+}
+.service-div-button a:hover {
+  transform: scale(1.1);
+  color: rgb(108, 124, 179);
+}
+
+
 .blog_article p {
   width: 700px;
   padding-bottom: 10px;
@@ -389,5 +448,416 @@ margin-bottom: 100px;
 .main_blog img {
   border-radius: 30px;
   padding-bottom: 10px;
-  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 10%);
+
+}
+.contact_main_image{
+  width: 100%;
+}
+.service-image {
+  object-fit: cover;
+  border-radius: 3%;
+  width: 30%;
+  height: 30%;
+  margin: 5px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+}
+.image-service-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-service-div>img {
+  display: flex;
+}
+article.service-article {
+  margin-left: 20%;
+}
+.article-div {
+  padding: 30px;
+  width: 90%;
+}
+.article-div p {
+  width: 70%;
+}
+.service-main h2{
+  margin-bottom: 50px;
+}
+.service-body .header-flex {
+  margin-bottom: 40px;
+}
+
+
+
+
+
+@media (max-width: 500px) {
+  body {
+    position: absolute;
+    margin:0;
+    min-height: 100vh; 
+    height: 100%;
+    width: 850px;
+  }
+
+  .container-page {
+    padding-bottom: 30px;
+    padding-bottom: 440px;
+
+  }
+  .logo>h1 {
+
+    width: 150px;
+    font-size: 1.4em;
+  }
+
+  h1 {
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+  }
+  .header-flex {
+    flex-direction: column;
+    justify-content: center;
+   
+  }
+  nav {
+    display: flex;
+    position: relative;
+    padding-right: 87px;
+    width: 500px;
+    margin-right: 100px;
+  }
+  .navLink-container {
+    padding: 0 5px 0 5px;
+    margin: 0 10px 0 10px;
+    min-width: 101px;
+ 
+}
+.navLink-button {
+  color: rgb(189, 189, 189);
+  padding: 5px 10px 5px 10px;
+  border-radius: 10%;
+  font-size: 15px;
+  border: none;
+  font-weight: 900;
+}
+  .mapouter {
+    position: relative;
+    text-align: right;
+    height: 200px;
+    width: 850px;
+  }
+  .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 200px;
+    width: 850px;
+  }
+  #gmap_canvas_iframe {
+    height: 270px;
+    width: 850px;
+    border: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+  }
+  .main-flex {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+main p {
+  font-size: 1.3rem;
+}
+  
+  .footer-flex {
+    background-color: rgb(221, 218, 218);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 13px;
+    margin-left: 0px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .footer-flex-div{
+    background-color: rgb(221, 218, 218);
+    width: 100%;
+    height: 110px;
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+
+  .facebook-logo {
+    padding-left: 92px;
+}
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 850px;
+    position: absolute;
+    bottom: 0;
+   
+  }
+  .headerImage{
+    width: 850px;
+  }
+  .container-flex {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 160px;
+    align-items: center;
+    width: 100%;
+    font-weight: 700;
+}
+.logo {
+  width: 216px;
+  margin-top: 11px;
+  height: 123px;
+  padding-right: 16px;
+  margin-bottom: 10px;
+}
+.gridbox-gallery {
+  display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(1, 500px);
+    grid-template-rows: repeat(3, 300px);
+    column-gap: 32px;
+    row-gap: 37px;
+}
+.gridbox-gallery > img {
+  object-fit: cover;
+  width: 500px;
+  height: 300px;
+  border-radius: 3%;
+}
+.main_blog{
+  margin-top: 40px;
+}
+#shop-image {
+  width: 75%;
+  height: 75%;
+  margin-top: 20px;
+}
+.shop-info-flex {
+  display: flex;
+  padding: 0 80px;
+  margin-bottom: 60px;
+}
+.main-flex {
+  display: flex;
+  flex-direction: column;
+}
+main.service-main {
+  padding: 20px;
+  margin-top: 40px;
+}
+.service-image {
+  object-fit: cover;
+  border-radius: 3%;
+  width: 40%;
+  height: 40%;
+}
+.image-service-div {
+  display: flex;
+}
+.image-service-div>img {
+  display: flex;
+}
+article.service-article {
+  margin-left: 10%;
+}
+.form-container{
+  width: 70%;
+
+}
+
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1030px){
+  body {
+    position: absolute;
+    margin:0;
+    min-height: 100vh; 
+    height: 100%;
+    width: 1024px;
+  }
+
+  .container-page {
+    padding-bottom: 30px;
+    padding-bottom: 440px;
+
+  }
+  .logo>h1 {
+
+    width: 166px;
+    font-size: 1.4em;
+  }
+
+  h1 {
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+  }
+
+  nav {
+    display: flex;
+    position: relative;
+    width: 1024px;
+    margin-left: 124px;
+  }
+  .navLink-container {
+    padding: 0 5px 0 5px;
+    margin: 0 10px 0 10px;
+    min-width: 101px;
+ 
+}
+.navLink-button {
+  color: rgb(189, 189, 189);
+  padding: 5px 10px 5px 10px;
+  border-radius: 10%;
+  font-size: 15px;
+  border: none;
+  font-weight: 900;
+}
+  .mapouter {
+    position: relative;
+    text-align: right;
+    height: 200px;
+    width: 1024px;
+  }
+  .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 200px;
+    width: 1024px;
+  }
+  #gmap_canvas_iframe {
+    height: 270px;
+    width: 1024px;
+    border: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+  }
+  .main-flex {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+main p {
+  font-size: 1.3rem;
+}
+  
+  .footer-flex {
+    background-color: rgb(221, 218, 218);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 13px;
+    margin-left: 0px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .footer-flex-div{
+    background-color: rgb(221, 218, 218);
+    width: 100%;
+    height: 110px;
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+
+  .facebook-logo {
+    padding-left: 92px;
+}
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1024px;
+    position: absolute;
+    bottom: 0;
+   
+  }
+  .headerImage{
+    width: 1024px;
+  }
+  .container-flex {
+    padding-left: 61px;
+
+}
+.logo {
+  width: 216px;
+  margin-top: 11px;
+  height: 123px;
+  padding-right: 16px;
+  margin-bottom: 10px;
+}
+.gridbox-gallery {
+  display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(1, 900px);
+    grid-template-rows: repeat(3, 500px);
+    column-gap: 32px;
+    row-gap: 37px;
+}
+.gridbox-gallery > img {
+  object-fit: cover;
+  width: 900px;
+  height: 500px;
+  border-radius: 3%;
+}
+.main_blog{
+  margin-top: 40px;
+}
+#shop-image {
+  width: 75%;
+  height: 75%;
+  margin-top: 20px;
+}
+.shop-info-flex {
+  display: flex;
+  padding: 0 80px;
+  margin-bottom: 60px;
+}
+.main-flex {
+  display: flex;
+  flex-direction: column;
+}
+main.service-main {
+  padding: 20px;
+  margin-top: 40px;
+}
+.service-image {
+  object-fit: cover;
+  border-radius: 3%;
+  width: 40%;
+  height: 40%;
+}
+.image-service-div {
+  display: flex;
+}
+.image-service-div>img {
+  display: flex;
+}
+article.service-article {
+  margin-left: 10%;
+}
+.form-container{
+  width: 70%;
+
+}
+  
+
 }
