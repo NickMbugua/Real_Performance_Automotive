@@ -28,6 +28,7 @@ section.hour-flex {
 .container-flex {
   display: flex;
   justify-content: space-between;
+  background-color: aliceblue;
   padding-left: 144px;
   padding-right: 86px;
   height: 115px;
@@ -58,6 +59,7 @@ ul {
 #shop_hour {
   background-color: rgb(230, 230, 230);
   display: flex;
+  color: black;
   padding: 14px;
   height: 37px;
   align-items: center;
@@ -79,6 +81,7 @@ ul {
   font-weight: 700;
 }
 
+
 label {
   display: flex;
   padding-top: 10px;
@@ -91,7 +94,6 @@ label {
   align-items: center;
   padding-right: 17px;
   padding-left: 10px;
-
   background-color: rgb(221, 218, 218);
   height: 70px;
   width: 100%;
@@ -116,13 +118,84 @@ nav {
   justify-content: space-between;
 }
 
-a:visited {
-  color: rgb(0, 0, 0);
+
+
+.navLink-container{
+  position: relative;
+  display:inline-block;
+}
+.droplist-content {
+  display: none;
+  position: absolute;
+  background-color: #ececec;
+  width: 215px;
+  border-radius: 10%;
+  margin-top: 2%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+} 
+.droplist-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.droplist-content a:hover {
+  color: rgb(98, 117, 180);
+    background-color: #e4e3e3;
+  border-radius: 10%;
+}
+.navLink-container:hover .droplist-content {
+  display: block;
+}
+.navLink-container:hover .navLink-button:not(#active-link) {
+  color: rgb(98, 117, 180);
+  transform: scale(1.05);
+
+}
+#active-link {
+ color: #d7d7d7;
 }
 
-a:link {
-  color: rgb(0, 0, 0);
+#active{
+  color:rgb(221, 218, 218);
 }
+.navLink-button>a:active {           
+  color:rgb(221, 218, 218);
+}
+.navLink-button>a {                 
+  color:rgb(0, 0, 0);
+}
+a:hover {
+  color: rgb(98, 117, 180);
+
+}
+a {                                     
+  text-decoration: none;
+}
+.navLink-button a {
+  text-decoration: none;
+  display: block;
+}
+
+.navLink-container {
+  padding: 0 5px 0 5px;
+  background-color: #f0f0f0;
+  min-width: 115px;
+  border-radius: 10%;
+  text-align: center;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 10%);
+}
+
+.navLink-button {
+
+  color: rgb(0, 0, 0);
+  padding: 5px 10px 5px 10px;
+  border-radius: 10%;
+  font-size: 20px;
+  border: none;
+  font-weight: 900;
+}
+
 
 
 .navLink-button>a:hover {
@@ -156,35 +229,12 @@ a {
   display: flex;
   width: 100%;
   height: 50px;
-  background-color: rgb(221, 218, 218);
+  background-color: #efddc4;
   align-items: center;
   justify-content: center;
   margin-bottom: 9px;
 }
 
-.navLink-button a {
-  text-decoration: none;
-  display: block;
-}
-
-.navLink-container {
-  padding: 0 5px 0 5px;
-  background-color: #f0f0f0;
-  min-width: 115px;
-  border-radius: 10%;
-  text-align: center;
-  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 10%);
-}
-
-.navLink-button {
-
-  color: rgb(189, 189, 189);
-  padding: 5px 10px 5px 10px;
-  border-radius: 10%;
-  font-size: 20px;
-  border: none;
-  font-weight: 900;
-}
 
 
 
@@ -198,18 +248,18 @@ main {
 }
 
 .footer-flex {
-  background-color: rgb(221, 218, 218);
+  background-color: #efddc4;
   display: flex;
   width: 60%;
   align-items: center;
   margin-top: 13px;
   justify-content: space-between;
-  margin-left: 22.5%;
+  margin-left: 21.5%;
 
 }
 
 .footer-flex-div {
-  background-color: rgb(221, 218, 218);
+  background-color: #efddc4;
   width: 100%;
   height: 110px;
   margin-top: 10px;
@@ -286,9 +336,6 @@ main.contact-page-main {
   justify-content: space-around;
 }
 
-.main_blog {
-  margin-top: 50px;
-}
 
 #shop-image {
   border-radius: 20px;
@@ -308,6 +355,10 @@ main.contact-page-main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home-page-service-flex h3{
+  width: 600px;
+  text-align: center;
 }
 
 div#service-button {
@@ -331,76 +382,24 @@ div#service-button {
   object-fit: cover;
   margin: 10px;
   border-radius: 20px;
-  width: 27%;
+  width: 20%;
   height: 27%;
   box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 10%);
   ;
 }
 
+.service-div-button a:visited {
+  color: rgb(0, 0, 0);
+}
 
+a:link {
+  color: rgb(0, 0, 0);
+}
 
 
 /*Service page and Blog Page */
 
-.droplist-content {
-  position: relative;
-  background-color: #ececec;
-  min-width: 115px;
-  border-radius: 10%;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-}
 
-.droplist-content a {
-  color: black;
-  padding: 12px 16px;
-  font-size: 20px;
-  font-weight: 600;
-  text-decoration: none;
-  display: block;
-}
-
-.droplist-content a:hover {
-  background-color: #dddddd;
-  border-radius: 10%;
-  color: rgb(98, 117, 180);
-
-
-}
-
-.blog-navLink-button {
-  background-color: rgb(217 217 217);
-  color: rgb(0, 0, 0);
-  padding: 5px 10px 5px 10px;
-  border-radius: 10%;
-  font-size: 20px;
-  border: none;
-  cursor: pointer;
-  font-weight: 900;
-}
-
-.blog-navLink-button:hover {
-  color: rgb(98, 117, 180);
-  transform: scale(1.05);
-}
-
-
-.blog-navLink-container:hover {
-  background-color: #dddddd;
-  color: rgb(98, 117, 180);
-}
-
-.blog-navLink-container {
-  background-color: #f0f0f0;
-  position: fixed;
-  min-width: 115px;
-  border-radius: 10%;
-  text-align: center;
-  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 10%);
-}
-
-.blog-navLink-container:hover .droplist-content {
-  display: block;
-}
 
 .blog_article {
   display: flex;
@@ -436,6 +435,9 @@ div#service-button {
 .service-div-button a:hover {
   transform: scale(1.1);
   color: rgb(108, 124, 179);
+}
+.main_blog {
+  margin-top: 58px;
 }
 
 
@@ -522,8 +524,9 @@ article.service-article {
   cursor: pointer;
   transform: scale(1.1);
 }
-
-
+main.service-main {
+  margin-top: 4%;
+}
 
 
 
@@ -532,7 +535,7 @@ article.service-article {
 
 main.store-main {
   padding: 0 20% 0 20%;
-  margin-top: 60px;
+  margin-top: 5%;
 }
 
 .store-image-div {
@@ -660,11 +663,12 @@ textarea {
   }
 
   .container-flex {
-
-    padding-left: 15px;
-    padding-right: 15px;
+   
+    padding-right: 22px;
     height: 160px;
-    width: 100%;
+    width: 105%;
+
+    margin-left: -5%;
   }
 
   .logo>h1 {
@@ -689,6 +693,7 @@ textarea {
   .header-flex {
     flex-direction: column;
     justify-content: center;
+
 
   }
 
@@ -760,7 +765,7 @@ textarea {
 
 
   .facebook-logo {
-    padding-left: 92px;
+    padding-left: 50px;
   }
 
   footer {
@@ -790,16 +795,16 @@ textarea {
   .gridbox-gallery {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(1, 500px);
-    grid-template-rows: repeat(3, 300px);
+    grid-template-columns: repeat(1, 600px);
+    grid-template-rows: repeat(3, 400px);
     column-gap: 32px;
     row-gap: 37px;
   }
 
   .gridbox-gallery>img {
     object-fit: cover;
-    width: 500px;
-    height: 300px;
+    width: 600px;
+    height: 400px;
     border-radius: 3%;
   }
 
@@ -860,6 +865,19 @@ textarea {
   h4{
     font-size: 1.4rem;
   }
+  main.store-main {
+    margin-top: 9%;
+}
+.address_p{
+  width: 280px;
+  text-align: center;
+  margin-left: -21%;
+}
+.address_h{
+  width: 280px;
+  text-align: center;
+}
+
 
 }
 
@@ -956,7 +974,6 @@ textarea {
   }
 
   .footer-flex {
-    background-color: rgb(221, 218, 218);
     display: flex;
     width: 100%;
     align-items: center;
@@ -967,7 +984,6 @@ textarea {
   }
 
   .footer-flex-div {
-    background-color: rgb(221, 218, 218);
     width: 100%;
     height: 110px;
     margin-top: 10px;
@@ -992,10 +1008,6 @@ textarea {
     width: 1024px;
   }
 
-  .container-flex {
-    padding-left: 61px;
-
-  }
 
   .logo {
     width: 216px;
@@ -1044,13 +1056,9 @@ textarea {
 
   main.service-main {
     padding: 20px;
-    margin-top: 40px;
+    margin-top: 0%;
   }
 
-  .main-service-div {
-    margin-top: 20%;
-
-  }
 
   .service-image {
     object-fit: cover;
@@ -1086,6 +1094,15 @@ textarea {
     margin-top: 5%;
 
   }
-
+  .address_p{
+    width: 280px;
+    text-align: center;
+    margin-left: -21%;
+  }
+  .address_h{
+    width: 280px;
+    text-align: center;
+  }
+  
 
 }
