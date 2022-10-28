@@ -213,7 +213,7 @@ a {
 
 
 .navLink-button>a:hover {
-  color: rgb(26, 74, 230);
+  color: rgb(53, 88, 204);
   transform: scale(1.1);
 }
 
@@ -248,7 +248,9 @@ a {
   justify-content: center;
   margin-bottom: 9px;
 }
-
+.email-link {
+  font-weight: 700;
+}
 
 
 
@@ -726,9 +728,15 @@ textarea {
     padding: 0 5px 0 5px;
     margin: 0 10px 0 10px;
     min-width: 101px;
+    background-color: #bbbbbb;
 
   }
-
+  #active-link {
+    color: #233fa8;
+}
+#active {
+  color: #233fa8;
+}
   .navLink-button {
     color: rgb(189, 189, 189);
     padding: 5px 10px 5px 10px;
