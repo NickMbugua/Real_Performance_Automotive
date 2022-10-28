@@ -15,3 +15,14 @@ shopHour.appendChild(divText);
 let hourDiv = document.querySelector('#shop_hour');
 hourDiv.appendChild(shopHour);
 
+
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+  }
+  
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+
+
+
