@@ -51,7 +51,7 @@ contactForm.addEventListener("submit", (e) => {
         errorDiv.innerHTML = message.join('</br>')
     }
     else {
-        window.location.href = `mailto:mbugua@ualberta.ca?subject="${userName.value.trim()} ${year.value.trim()} ${make.value.trim()} ${model.value.trim()}"&body=%0DPhone Number: ${phoneNumber.value.trim()}%0DClient: ${userName.value.trim()}%0DRequest: ${reason.value}`;
+        window.location.href = `mailto:realperformance@charter.net?subject="${userName.value.trim()} ${year.value.trim()} ${make.value.trim()} ${model.value.trim()}"&body=%0DPhone Number: ${phoneNumber.value.trim()}%0DClient: ${userName.value.trim()}%0DRequest: ${reason.value}`;
         errorDiv.innerHTML = "";
         userName.value = "";
         phoneNumber.value = '';
