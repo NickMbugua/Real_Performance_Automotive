@@ -429,7 +429,7 @@ a:link {
 
 .service-div-button {
   padding: 0 5px 0 5px;
-  background-color: #d7d7d7;
+  background-color: #a5aba9;
   min-width: 115px;
   border-radius: 10%;
   text-align: center;
@@ -665,6 +665,12 @@ textarea {
   flex-direction: column;
   padding: 80px;
 }
+#contact-link{
+  background-color: #a5aba9;
+  margin-top: 5%;
+}
+
+
 
 
 /*--------------------------------*/
@@ -905,6 +911,16 @@ textarea {
   .address_h {
     width: 280px;
     text-align: center;
+  }
+  #contact-link{
+    background-color: gainsboro;
+    margin-top: 5%;
+  }
+  .store-image-div-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
   }
 
 
