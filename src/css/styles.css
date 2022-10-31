@@ -570,8 +570,24 @@ main.store-main {
 .relay-link {
   color: blue;
 }
-
-
+.service-image {
+  object-fit: cover;
+  border-radius: 3%;
+  width: 530px;
+  height: 320px;
+  margin: 5px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+}
+.store-image-div-2 {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 530px);
+  grid-template-rows: repeat(3, 320px);
+  column-gap: 13px;
+  row-gap: 13px;
+  margin-top: 40px;
+  margin-bottom: 10%;
+}
 
 /*Gallery page */
 
